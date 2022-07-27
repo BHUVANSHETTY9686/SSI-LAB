@@ -36,6 +36,8 @@ int main()
 					time=time+time_quantum;
 					rt[count]-=time_quantum;
 				}
+				
+				//to print the sequence
 				if(rt[count]==0 && flag==1)
 				{
 					remain--;
@@ -44,6 +46,8 @@ int main()
 					turnaround_time+=time-at[count];
 					flag=0;
 				}
+				
+				//till here
 				if(count==n-1)
 					count=0;
 				else if(at[count+1]<=time)
