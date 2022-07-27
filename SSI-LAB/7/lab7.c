@@ -5,8 +5,8 @@ int main()
 	int wait_time=0,turnaround_time=0,at[10],bt[10],rt[10];
 	int endtime ,i,smallest;
 	int remain=0,sum_wait=0,sum_turnaround=0;
-	printf("	1.Round robin \n	2.SRTF\n");
-	scanf("%d",&ch);
+	
+	
 	printf("enter no. of processes:");
 	scanf("%d",&n);
 	for(i=0;i<n;i++)
@@ -17,6 +17,10 @@ int main()
 		scanf("%d",&bt[i]);
 		rt[i]=bt[i];
 	}
+	
+	printf("	1.Round robin \n	2.SRTF\n");
+	scanf("%d",&ch);
+	
 	switch(ch)
 	{
 		case 1:printf("enter the quantumtime:");
